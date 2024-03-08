@@ -4,9 +4,11 @@ document.getElementById('shareButton').addEventListener('click', async () => {
         return;
     }
 
-    const image = document.getElementById('imageToShare');
+    // Specify the image URL you want to share
+    const imageUrl = 'https://os-portfolio.javier.games/static/media/javier_garcia_portrait.677d28f190d4bb6ad2f9.png';
+
     try {
-        const response = await fetch(image.src);
+        const response = await fetch(imageUrl);
         const blob = await response.blob();
         const file = new File([blob], 'shared-image.jpg', { type: blob.type });
         await navigator.share({
