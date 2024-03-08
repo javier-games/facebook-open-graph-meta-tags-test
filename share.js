@@ -1,8 +1,8 @@
 document.getElementById('shareButton').addEventListener('click', async () => {
-    if (!navigator.canShare || !navigator.canShare({ files: [new File([], '')] })) {
-        alert('Web Share API not supported or file sharing not supported.');
-        return;
-    }
+    // if (!navigator.canShare || !navigator.canShare({ files: [new File([], '')] })) {
+    //     alert('Web Share API not supported or file sharing not supported.');
+    //     return;
+    // }
 
     // Specify the image URL you want to share
     const imageUrl = 'https://os-portfolio.javier.games/static/media/javier_garcia_portrait.677d28f190d4bb6ad2f9.png';
